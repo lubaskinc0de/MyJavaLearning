@@ -6,13 +6,13 @@ import java.util.function.Function;
 
 public class Calculator {
 
-    static final Map<String, BiFunction<Integer, Integer, Double>> ACTIONS =
+    protected  static final Map<String, BiFunction<Integer, Integer, Double>> ACTIONS =
             Map.of("+", Calculator::sum,
                     "-", Calculator::sub,
                     "*", Calculator::mul,
                     "/", Calculator::div);
 
-    static final String WELCOME_MESSAGE = """
+    protected static final String WELCOME_MESSAGE = """
                 Добро пожаловать!
                 Это самый простейший калькулятор
                                 
@@ -32,14 +32,14 @@ public class Calculator {
         in.close();
     }
 
-    public static <T> T getInput(Scanner in, String text,
+    protected static <T> T getInput(Scanner in, String text,
                                  Function<Scanner, T> getResult) {
         System.out.println(text);
 
         return getResult.apply(in);
     }
 
-    public static void selectAction(Scanner scanner) {
+    protected static void selectAction(Scanner scanner) {
         String action = getInput(scanner, WELCOME_MESSAGE, Scanner::nextLine);
 
         if (!ACTIONS.containsKey(action)) {
@@ -57,19 +57,19 @@ public class Calculator {
         System.out.printf("Результат: %.2f%n", result);
     }
 
-    public static double sum(int numberOne, int numberTwo) {
+    protected static double sum(int numberOne, int numberTwo) {
         return (double) numberOne + numberTwo;
     }
 
-    public static double sub(int numberOne, int numberTwo) {
+    protected static double sub(int numberOne, int numberTwo) {
         return (double) numberOne - numberTwo;
     }
 
-    public static double div(int numberOne, int numberTwo) {
+    protected static double div(int numberOne, int numberTwo) {
         return (double) numberOne / numberTwo;
     }
 
-    public static double mul(int numberOne, int numberTwo) {
+    protected static double mul(int numberOne, int numberTwo) {
         return (double) numberOne * numberTwo;
     }
 }
