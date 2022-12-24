@@ -121,6 +121,13 @@ public class Cycles {
             System.out.println(j);
             j--;
         }
+
+        Операторы continue и break
+
+        Оператор break позволяет выйти из цикла в любой его момент, даже если
+        цикл не закончил свою работу
+
+        Оператор continue позволяет пропустить итерацию цикла
          */
 
         System.out.println("for loop");
@@ -131,7 +138,6 @@ public class Cycles {
         System.out.println("while loop");
 
         whileLoop();
-
     }
 
     protected static void forLoop() {
