@@ -1,3 +1,5 @@
+package beginner;
+
 public class IfElse {
     public static void main(String[] args) {
         boolean condition = "Hello" == "Hello";

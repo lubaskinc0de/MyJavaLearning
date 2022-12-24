@@ -1,3 +1,5 @@
+package beginner;
+
 public class SwitchCase {
     public static void main(String[] args) {
         int condition = 3;

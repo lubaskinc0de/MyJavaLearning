@@ -1,3 +1,5 @@
+package beginner;
+
 public class TernaryOperation {
     public static void main(String[] args) {
         int ternary = 5 == 2 + 3 ? 4 : 3; // если 5 == 2 то результат

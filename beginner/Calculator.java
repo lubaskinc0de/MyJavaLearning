@@ -1,3 +1,5 @@
+package beginner;
+
 import java.util.Map;
 import java.util.Scanner;
 import java.util.function.BiFunction;

@@ -1,3 +1,5 @@
+package beginner;
+
 public class CastTypes {
     public static void main(String[] args) {
         /*

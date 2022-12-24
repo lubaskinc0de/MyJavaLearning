@@ -1,3 +1,5 @@
+package beginner;
+
 // модификатор доступа public, класс будет доступен из cmd
 public class Variables {
 
