@@ -26,7 +26,7 @@ public class Calculator {
                 """;
 
     public static void main(String[] args) {
-        final Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
         selectAction(in);
         in.close();
@@ -52,7 +52,7 @@ public class Calculator {
         int numberTwo = getInput(scanner, "Введите второе число: ",
                 Scanner::nextInt);
 
-        Double result = ACTIONS.get(action).apply(numberOne, numberTwo);
+        double result = ACTIONS.get(action).apply(numberOne, numberTwo);
 
         System.out.printf("Результат: %.2f%n", result);
     }
