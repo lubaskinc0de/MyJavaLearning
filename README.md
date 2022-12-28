@@ -7,13 +7,13 @@
 <h2 style="padding: 0"> Here is my java learning repository.</h2>
 </div>
 
-<div align="center" style="margin-top: 30px">
+<p align="center" style="margin-top: 30px">
 <img src="https://img.shields.io/badge/java-%23ED8B00.svg?
 style=for-the-badge&logo=java&logoColor=white">
 <img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?
 style=for-the-badge&logo=intellij-idea&logoColor=white)">
 
-</div>
+</p>
 
 ## Description
 Here you will find all my theory, practice and projects
