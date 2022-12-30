@@ -7,10 +7,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class RandExample {
+    static final int EXAMPLES_COUNT = 15;
+
     public static void main(String[] args) {
         ArrayList<String> examples = randExamples();
 
-        System.out.println(Arrays.toString(validateExamples(examples).toArray()));
+        System.out.println(Arrays.toString(examples.toArray()));
     }
 
     private static int[] randNumbers() {
@@ -24,7 +26,7 @@ public class RandExample {
         return new int[]{firstNumber, secondNumber};
     }
 
-    private static String randExample() {
+    public static String randExample() {
         int[] numbers = randNumbers();
 
         return String.format("%d*%d", numbers[0], numbers[1]);
@@ -33,11 +35,11 @@ public class RandExample {
     public static ArrayList<String> randExamples() {
         ArrayList<String> examples = new ArrayList<String>();
 
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < EXAMPLES_COUNT; i++) {
             examples.add(randExample());
         }
 
-        return examples;
+        return validateExamples(examples);
     }
 
 
@@ -84,7 +86,7 @@ public class RandExample {
         ArrayList<String> filtered = filterExamples(examples);
         int filteredSize = filtered.size();
 
-        for (int i = 0; i < 15-filteredSize; i++) {
+        for (int i = 0; i < EXAMPLES_COUNT-filteredSize; i++) {
             filtered.add(randExample());
         }
 

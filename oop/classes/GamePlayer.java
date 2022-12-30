@@ -1,6 +1,6 @@
 package oop.classes;
 
-import oop.enums.PLAYERSTATES;
+import oop.enums.PlayerStates;
 
 public class GamePlayer {
     private int x;
@@ -10,7 +10,7 @@ public class GamePlayer {
     private String[] items;
     private int[] walkingTo;
 
-    private PLAYERSTATES state;
+    private PlayerStates state;
 
     {
         health = 100;
@@ -18,7 +18,7 @@ public class GamePlayer {
         y = 0;
         items = new String[5];
         walkingTo = new int[2];
-        state = PLAYERSTATES.STAYING;
+        state = PlayerStates.STAYING;
     }
 
     public GamePlayer(String playerName) {
@@ -31,12 +31,12 @@ public class GamePlayer {
     }
 
     public void walkTo(int x, int y) {
-        state = PLAYERSTATES.WALKING;
+        state = PlayerStates.WALKING;
         walkingTo = new int[]{x, y};
     }
 
     public void stop() {
-        state = PLAYERSTATES.STAYING;
+        state = PlayerStates.STAYING;
 
         x = walkingTo[0];
         y = walkingTo[1];
@@ -53,7 +53,7 @@ public class GamePlayer {
         return new int[]{x, y};
     }
 
-    public PLAYERSTATES getState() {
+    public PlayerStates getState() {
         return state;
     }
 

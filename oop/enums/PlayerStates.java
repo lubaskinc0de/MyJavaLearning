@@ -1,6 +1,6 @@
 package oop.enums;
 
-public enum PLAYERSTATES {
+public enum PlayerStates {
     STAYING,
     WALKING,
 }

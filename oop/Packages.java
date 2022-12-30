@@ -83,7 +83,5 @@ javac study\Program.java
 
 java study.Program
          */
-
-        Math.random();
     }
 }
