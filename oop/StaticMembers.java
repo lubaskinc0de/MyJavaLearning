@@ -1,10 +1,8 @@
 package oop;
 
-import jdk.jfr.Description;
-
 import java.util.Arrays;
 
-public class StaticMethods {
+public class StaticMembers {
     public static void main(String[] args) {
         /*
         Кроме обычных методов и полей класс может иметь статические поля,
